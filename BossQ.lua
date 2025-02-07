@@ -1,3 +1,5 @@
+--nigga
+
 local id = game.PlaceId
 if id == 2753915549 then 
     _G.First_Sea = true;

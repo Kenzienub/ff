@@ -12,7 +12,7 @@ else
 end
 
 function CheckBossQuest(SelectBoss)
-    if First_Sea then
+    if _G.First_Sea then
         if SelectBoss == "The Gorilla King" then
             _G.BossMon = "The Gorilla King [Lv. 25] [Boss]"
             _G.NameBoss = 'The Gorrila King'
@@ -131,7 +131,7 @@ function CheckBossQuest(SelectBoss)
             _G.CFrameBoss = CFrame.new(-5081.3452148438, 85.221641540527, 4257.3588867188)
         end
     end
-    if Second_Sea then
+    if _G.Second_Sea then
         if SelectBoss == "Diamond" then
             BossMon = "Diamond [Lv. 750] [Boss]"
             NameBoss = 'Diamond'
@@ -198,7 +198,7 @@ function CheckBossQuest(SelectBoss)
             CFrameBoss = CFrame.new(-6217.2021484375, 28.047645568848, -5053.1357421875)
         end
     end
-    if Third_Sea then
+    if _G.Third_Sea then
         if SelectBoss == "Stone" then
             BossMon = "Stone [Lv. 1550] [Boss]"
             NameBoss = 'Stone'

@@ -261,3 +261,4 @@ function CheckBossQuest()
             CFrameBoss = CFrame.new(-5415.3920898438, 505.74133300781, -2814.0166015625)
         end
     end
+end

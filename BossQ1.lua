@@ -11,7 +11,7 @@ else
     lp:Kick("UnKnown Game. Discord: dsc.gg/xDevil")
 end
 
-function CheckBossQuest(SelectBoss)
+function CheckBossQuest()
     if _G.First_Sea then
         if SelectBoss == "The Gorilla King" then
             _G.BossMon = "The Gorilla King [Lv. 25] [Boss]"

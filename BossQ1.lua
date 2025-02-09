@@ -1,4 +1,4 @@
---nigga
+---@diagnostic disable: undefined-global, lowercase-global, unused-function, unused-local, empty-block, unbalanced-assignments, deprecated, undefined-field
 
 local id = game.PlaceId
 if id == 2753915549 then 
@@ -13,9 +13,10 @@ end
 
 function CheckBossQuest()
     if _G.First_Sea then
-        if SelectBoss == "The Gorilla King" then
+        if  SelectBoss == "The Gorilla King" then
             _G.BossMon = "The Gorilla King [Lv. 25] [Boss]"
             _G.NameBoss = 'The Gorrila King'
+            _G.BossLevel = 25
             _G.NameQuestBoss = "JungleQuest"
             _G.QuestLvBoss = 3
             _G.RewardBoss = "Reward:\n$2,000\n7,000 Exp."
@@ -24,6 +25,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Bobby" then
             _G.BossMon = "Bobby [Lv. 55] [Boss]"
             _G.NameBoss = 'Bobby'
+            _G.BossLevel = 55
             _G.NameQuestBoss = "BuggyQuest1"
             _G.QuestLvBoss = 3
             _G.RewardBoss = "Reward:\n$8,000\n35,000 Exp."
@@ -31,11 +33,13 @@ function CheckBossQuest()
             _G.CFrameBoss = CFrame.new(-1087.3760986328, 46.949409484863, 4040.1462402344)
         elseif SelectBoss == "The Saw" then
             _G.BossMon = "The Saw [Lv. 100] [Boss]"
+            _G.BossLevel = 100
             _G.NameBoss = 'The Saw'
             _G.CFrameBoss = CFrame.new(-784.89715576172, 72.427383422852, 1603.5822753906)
         elseif SelectBoss == "Yeti" then
             _G.BossMon = "Yeti [Lv. 110] [Boss]"
             _G.NameBoss = 'Yeti'
+            _G.BossLevel = 110
             _G.NameQuestBoss = "SnowQuest"
             _G.QuestLvBoss = 3
             _G.RewardBoss = "Reward:\n$10,000\n180,000 Exp."
@@ -44,10 +48,12 @@ function CheckBossQuest()
         elseif SelectBoss == "Mob Leader" then
             _G.BossMon = "Mob Leader [Lv. 120] [Boss]"
             _G.NameBoss = 'Mob Leader'
+            _G.BossLevel = 120
             _G.CFrameBoss = CFrame.new(-2844.7307128906, 7.4180502891541, 5356.6723632813)
         elseif SelectBoss == "Vice Admiral" then
             _G.BossMon = "Vice Admiral [Lv. 130] [Boss]"
             _G.NameBoss = 'Vice Admiral'
+            _G.BossLevel = 130
             _G.NameQuestBoss = "MarineQuest2"
             _G.QuestLvBoss = 2
             _G.RewardBoss = "Reward:\n$10,000\n180,000 Exp."
@@ -55,11 +61,13 @@ function CheckBossQuest()
             _G.CFrameBoss = CFrame.new(-5006.5454101563, 88.032081604004, 4353.162109375)
         elseif SelectBoss == "Saber Expert" then
             _G.NameBoss = 'Saber Expert'
+            _G.BossLevel = 200
             _G.BossMon = "Saber Expert [Lv. 200] [Boss]"
             _G.CFrameBoss = CFrame.new(-1458.89502, 29.8870335, -50.633564)
         elseif SelectBoss == "Warden" then
             _G.BossMon = "Warden [Lv. 220] [Boss]"
             _G.NameBoss = 'Warden'
+            _G.BossLevel = 220
             _G.NameQuestBoss = "ImpelQuest"
             _G.QuestLvBoss = 1
             _G.RewardBoss = "Reward:\n$6,000\n850,000 Exp."
@@ -68,6 +76,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Chief Warden" then
             _G.BossMon = "Chief Warden [Lv. 230] [Boss]"
             _G.NameBoss = 'Chief Warden'
+            _G.BossLevel = 230
             _G.NameQuestBoss = "ImpelQuest"
             _G.QuestLvBoss = 2
             _G.RewardBoss = "Reward:\n$10,000\n1,000,000 Exp."
@@ -76,6 +85,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Swan" then
             _G.BossMon = "Swan [Lv. 240] [Boss]"
             _G.NameBoss = 'Swan'
+            _G.BossLevel = 240
             _G.NameQuestBoss = "ImpelQuest"
             _G.QuestLvBoss = 3
             _G.RewardBoss = "Reward:\n$15,000\n1,600,000 Exp."
@@ -84,6 +94,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Magma Admiral" then
             _G.BossMon = "Magma Admiral [Lv. 350] [Boss]"
             _G.NameBoss = 'Magma Admiral'
+            _G.BossLevel = 350
             _G.NameQuestBoss = "MagmaQuest"
             _G.QuestLvBoss = 3
             _G.RewardBoss = "Reward:\n$15,000\n2,800,000 Exp."
@@ -92,6 +103,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Fishman Lord" then
             _G.BossMon = "Fishman Lord [Lv. 425] [Boss]"
             _G.NameBoss = 'Fishman Lord'
+            _G.BossLevel = 425
             _G.NameQuestBoss = "FishmanQuest"
             _G.QuestLvBoss = 3
             _G.RewardBoss = "Reward:\n$15,000\n4,000,000 Exp."
@@ -100,6 +112,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Wysper" then
             _G.BossMon = "Wysper [Lv. 500] [Boss]"
             _G.NameBoss = 'Wysper'
+            _G.BossLevel = 500
             _G. NameQuestBoss = "SkyExp1Quest"
             _G. QuestLvBoss = 3
             _G.RewardBoss = "Reward:\n$15,000\n4,800,000 Exp."
@@ -108,6 +121,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Thunder God" then
             _G.BossMon = "Thunder God [Lv. 575] [Boss]"
             _G.NameBoss = 'Thunder God'
+            _G.BossLevel = 575
             _G.NameQuestBoss = "SkyExp2Quest"
             _G.QuestLvBoss = 3
             _G.RewardBoss = "Reward:\n$20,000\n5,800,000 Exp."
@@ -116,6 +130,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Cyborg" then
             _G.BossMon = "Cyborg [Lv. 675] [Boss]"
             _G.NameBoss = 'Cyborg'
+            _G.BossLevel = 675
             _G.NameQuestBoss = "FountainQuest"
             _G.QuestLvBoss = 3
             _G.RewardBoss = "Reward:\n$20,000\n7,500,000 Exp."
@@ -124,25 +139,29 @@ function CheckBossQuest()
         elseif SelectBoss == "Ice Admiral" then
             _G.BossMon = "Ice Admiral [Lv. 700] [Boss]"
             _G.NameBoss = 'Ice Admiral'
+            _G.BossLevel = 700
             _G.CFrameBoss = CFrame.new(1266.08948, 26.1757946, -1399.57678, -0.573599219, 0, -0.81913656, 0, 1, 0, 0.81913656, 0, -0.573599219)
         elseif SelectBoss == "Greybeard" then
             _G.BossMon = "Greybeard [Lv. 750] [Raid Boss]"
             _G.NameBoss = 'Greybeard'
+            _G.BossLevel = 750
             _G.CFrameBoss = CFrame.new(-5081.3452148438, 85.221641540527, 4257.3588867188)
         end
     end
     if _G.Second_Sea then
         if SelectBoss == "Diamond" then
-            BossMon = "Diamond [Lv. 750] [Boss]"
-            NameBoss = 'Diamond'
-            NameQuestBoss = "Area1Quest"
-            QuestLvBoss = 3
-            RewardBoss = "Reward:\n$25,000\n9,000,000 Exp."
-            CFrameQBoss = CFrame.new(-427.5666809082, 73.313781738281, 1835.4208984375)
-            CFrameBoss = CFrame.new(-1576.7166748047, 198.59265136719, 13.724286079407)
+            _G.BossMon = "Diamond [Lv. 750] [Boss]"
+            _G.NameBoss = 'Diamond'
+            _G.BossLevel = 750
+            _G.NameQuestBoss = "Area1Quest"
+            _G.QuestLvBoss = 3
+            _G.RewardBoss = "Reward:\n$25,000\n9,000,000 Exp."
+            _G.CFrameQBoss = CFrame.new(-427.5666809082, 73.313781738281, 1835.4208984375)
+            _G.CFrameBoss = CFrame.new(-1576.7166748047, 198.59265136719, 13.724286079407)
         elseif SelectBoss == "Jeremy" then
             BossMon = "Jeremy [Lv. 850] [Boss]"
             NameBoss = 'Jeremy'
+            _G.BossLevel = 850
             NameQuestBoss = "Area2Quest"
             QuestLvBoss = 3
             RewardBoss = "Reward:\n$25,000\n11,500,000 Exp."
@@ -151,6 +170,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Fajita" then
             BossMon = "Fajita [Lv. 925] [Boss]"
             NameBoss = 'Fajita'
+            _G.BossLevel = 925
             NameQuestBoss = "MarineQuest3"
             QuestLvBoss = 3
             RewardBoss = "Reward:\n$25,000\n15,000,000 Exp."
@@ -159,10 +179,12 @@ function CheckBossQuest()
         elseif SelectBoss == "Don Swan" then
             BossMon = "Don Swan [Lv. 1000] [Boss]"
             NameBoss = 'Don Swan'
+            _G.BossLevel = 1000
             CFrameBoss = CFrame.new(2286.2004394531, 15.177839279175, 863.8388671875)
         elseif SelectBoss == "Smoke Admiral" then
             BossMon = "Smoke Admiral [Lv. 1150] [Boss]"
             NameBoss = 'Smoke Admiral'
+            _G.BossLevel = 1150
             NameQuestBoss = "IceSideQuest"
             QuestLvBoss = 3
             RewardBoss = "Reward:\n$20,000\n25,000,000 Exp."
@@ -171,6 +193,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Awakened Ice Admiral" then
             BossMon = "Awakened Ice Admiral [Lv. 1400] [Boss]"
             NameBoss = 'Awakened Ice Admiral'
+            _G.BossLevel = 1400
             NameQuestBoss = "FrostQuest"
             QuestLvBoss = 3
             RewardBoss = "Reward:\n$20,000\n36,000,000 Exp."
@@ -179,6 +202,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Tide Keeper" then
             BossMon = "Tide Keeper [Lv. 1475] [Boss]"
             NameBoss = 'Tide Keeper'
+            _G.BossLevel = 1475
             NameQuestBoss = "ForgottenQuest"
             QuestLvBoss = 3
             RewardBoss = "Reward:\n$12,500\n38,000,000 Exp."
@@ -187,14 +211,17 @@ function CheckBossQuest()
         elseif SelectBoss == "Darkbeard" then
             BossMon = "Darkbeard [Lv. 1000] [Raid Boss]"
             NameBoss = 'Darkbeard'
+            _G.BossLevel = 1000
             CFrameMon = CFrame.new(3677.08203125, 62.751937866211, -3144.8332519531)
         elseif SelectBoss == "Cursed Captain" then
             BossMon = "Cursed Captain [Lv. 1325] [Raid Boss]"
             NameBoss = 'Cursed Captain'
+            _G.BossLevel = 1325
             CFrameBoss = CFrame.new(916.928589, 181.092773, 33422)
         elseif SelectBoss == "Order" then
             BossMon = "Order [Lv. 1250] [Raid Boss]"
             NameBoss = 'Order'
+            _G.BossLevel = 1250
             CFrameBoss = CFrame.new(-6217.2021484375, 28.047645568848, -5053.1357421875)
         end
     end
@@ -202,6 +229,7 @@ function CheckBossQuest()
         if SelectBoss == "Stone" then
             BossMon = "Stone [Lv. 1550] [Boss]"
             NameBoss = 'Stone'
+            _G.BossLevel = 1550
             NameQuestBoss = "PiratePortQuest"
             QuestLvBoss = 3
             RewardBoss = "Reward:\n$25,000\n40,000,000 Exp."
@@ -210,6 +238,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Island Empress" then
             BossMon = "Island Empress [Lv. 1675] [Boss]"
             NameBoss = 'Island Empress'
+            _G.BossLevel = 1675
             NameQuestBoss = "AmazonQuest2"
             QuestLvBoss = 3
             RewardBoss = "Reward:\n$30,000\n52,000,000 Exp."
@@ -218,6 +247,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Kilo Admiral" then
             BossMon = "Kilo Admiral [Lv. 1750] [Boss]"
             NameBoss = 'Kilo Admiral'
+            _G.BossLevel = 1750
             NameQuestBoss = "MarineTreeIsland"
             QuestLvBoss = 3
             RewardBoss = "Reward:\n$35,000\n56,000,000 Exp."
@@ -226,6 +256,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Captain Elephant" then
             BossMon = "Captain Elephant [Lv. 1875] [Boss]"
             NameBoss = 'Captain Elephant'
+            _G.BossLevel = 1875
             NameQuestBoss = "DeepForestIsland"
             QuestLvBoss = 3
             RewardBoss = "Reward:\n$40,000\n67,000,000 Exp."
@@ -234,6 +265,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Beautiful Pirate" then
             BossMon = "Beautiful Pirate [Lv. 1950] [Boss]"
             NameBoss = 'Beautiful Pirate'
+            _G.BossLevel = 1950
             NameQuestBoss = "DeepForestIsland2"
             QuestLvBoss = 3
             RewardBoss = "Reward:\n$50,000\n70,000,000 Exp."
@@ -242,6 +274,7 @@ function CheckBossQuest()
         elseif SelectBoss == "Cake Queen" then
             BossMon = "Cake Queen [Lv. 2175] [Boss]"
             NameBoss = 'Cake Queen'
+            _G.BossLevel = 2175
             NameQuestBoss = "IceCreamIslandQuest"
             QuestLvBoss = 3
             RewardBoss = "Reward:\n$30,000\n112,500,000 Exp."
@@ -250,14 +283,17 @@ function CheckBossQuest()
         elseif SelectBoss == "Longma" then
             BossMon = "Longma [Lv. 2000] [Boss]"
             NameBoss = 'Longma'
+            _G.BossLevel = 2000
             CFrameBoss = CFrame.new(-10238.875976563, 389.7912902832, -9549.7939453125)
         elseif SelectBoss == "Soul Reaper" then
             BossMon = "Soul Reaper [Lv. 2100] [Raid Boss]"
             NameBoss = 'Soul Reaper'
+            _G.BossLevel = 2100
             CFrameBoss = CFrame.new(-9524.7890625, 315.80429077148, 6655.7192382813)
         elseif SelectBoss == "rip_indra True Form" then
             BossMon = "rip_indra True Form [Lv. 5000] [Raid Boss]"
             NameBoss = 'rip_indra True Form'
+            _G.BossLevel = 2000
             CFrameBoss = CFrame.new(-5415.3920898438, 505.74133300781, -2814.0166015625)
         end
     end

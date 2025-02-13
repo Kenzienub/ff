@@ -227,14 +227,14 @@ function CheckBossQuest()
     end
     if _G.Third_Sea then
         if SelectBoss == "Stone" then
-            BossMon = "Stone [Lv. 1550] [Boss]"
-            NameBoss = 'Stone'
+            _G.BossMon = "Stone [Lv. 1550] [Boss]"
+            _G.NameBoss = 'Stone'
             _G.BossLevel = 1550
-            NameQuestBoss = "PiratePortQuest"
-            QuestLvBoss = 3
-            RewardBoss = "Reward:\n$25,000\n40,000,000 Exp."
-            CFrameQBoss = CFrame.new(-289.76705932617, 43.819011688232, 5579.9384765625)
-            CFrameBoss = CFrame.new(-1027.6512451172, 92.404174804688, 6578.8530273438)
+            _G.NameQuestBoss = "PiratePortQuest"
+            _G.QuestLvBoss = 3
+            _G.RewardBoss = "Reward:\n$25,000\n40,000,000 Exp."
+            _G.CFrameQBoss = CFrame.new(-289.76705932617, 43.819011688232, 5579.9384765625)
+            _G.CFrameBoss = CFrame.new(-1027.6512451172, 92.404174804688, 6578.8530273438)
         elseif SelectBoss == "Island Empress" then
             BossMon = "Island Empress [Lv. 1675] [Boss]"
             NameBoss = 'Island Empress'
